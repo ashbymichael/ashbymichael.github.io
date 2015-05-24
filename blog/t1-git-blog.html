@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>Michael Ashby DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Week 1 - Git Bloggin'</h1>
+  <h4>2015/5/24</h4>
+
+  <section>
+    <p>
+      This first blog entry is all about version control in general, and Git in particular.  Git was created in 2005 specifically for the purpose of managing development on the Linux kernel.  Regarding the name, "Git" is not an acronym.  Though there are sources that give it as stanfing for Global Information Tracker, <a href="http://www.allacronyms.com/GIT/Global_Information_Tracker"> as in here </a>, but the truth is that it is just plain old "git", as in, "Oi! Give us a butcher's, you dozy git!"  <a href="https://git.wiki.kernel.org/index.php/Git_FAQ#Why_the_.27Git.27_name.3F">(Link)</a>
+    </p>
+    <p>
+      The primary purpose of any version control system, Git or otherwise, is to allow you to save multiple versions of the same file so that at any time you can jump back to a previously saved state.  Git does this very well, and with a minimum of overhead, but it does a lot more–e.g. providing backup and facilitating collaboration.
+    </p>
+    <p>
+      Some of Git's extra features are offered by its competitors, but its particular feature set has made it the default method for developers to share code less than ten years after its creation.  According to Jon Loeliger and Matthew McCullough in O'reilly's <i>Version Control with Git</i>, when Linus Torvalds moved the Linux kernel from its previous Version Control Software (Bitkeeper), he had eleven requirements that were not satisfied by any of the version control systems available at the time:
+      <ul>
+        <li>It had to facilitate distributed development so that developers working on the Linux Kernel could work across geographies and time zones.</li>
+        <li>It had to be scalable–Linux is not a little project.</li>
+        <li>		○ It had to be quick and efficient, especially considering that it had to work flawlessly over networks.</li>
+        <li>It had to maintain data integrity, which it does by using cryptography to name the objects within its database.</li>
+        <li>It had to enforce accountability.  I other words, it needed to be apparent who made any given change.</li>
+        <li>Its database needed to be immutable.  Objects can be copied and modified, of course, but having an unchangeable database is the only way to reliably preserve the entire history of a project.</li>
+        <li>It needed atomic transactions.  In other words, no partial transactions.  When an update or commit happens, it happens completely or it has no effect.</li>
+        <li>It needed to support and encourage branch development, and the required support system (forking branches, merging them together, etc...)</li>
+        <li>It needed to use complete repositories.  Every person working on a project has local access to the full repository and its history without having to access a remotes server.</li>
+        <li>It needed a clean internal design.</li>
+        <li>And finally, it had to be <em>free</em>.</li>
+      </ul>
+    </p>
+  </section>
+</main>
