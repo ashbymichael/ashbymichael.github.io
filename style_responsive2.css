@@ -5,6 +5,10 @@ html {
   font-family: Geneva, Tahoma, Calibri, Arial, sans-serif;
 }
 
+img {
+  float: left;
+  margin-right: .3em;
+}
 
 
 
@@ -13,42 +17,56 @@ html {
 Header
 *********************/
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   min-height: 3em;
   width: 100%;
-  background-color: cyan;
+  background-color: #383838;
+  border: 2px solid #000;
   overflow: hidden;
+  color: #f8f8f8
+}
+
+header a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #f8f8f8;
+  text-decoration: underline;
 }
 
 #logo {
-  float: left;
-  background-color: green;
   font-family: Futura, Helvetica, Tahoma, Arial, sans-serif;
-  font-size: 1.5em;
-  min-width: 50%;
-  margin: .33em 0 .5em 1em;
+  font-size: 1.6em;
+  width: 50%;
+  margin: .5em auto 0 auto;
+  text-align: center;
 }
 
 #nav {
-  float:right;
-  background-color: orangered;
   font-size: .75em;
-  margin: 3em 1em 0 1em;
-  min-width: 25%;
+  margin: .15em auto 0 auto;
+  width: 15em;
+
 }
 
 #nav li {
   display: inline;
-  background-color: white;
-
+  margin: 0 .25em;
 }
 
 #nav ul {
-  background-color:grey;
-  margin: 0;
-  text-decoration: none;
+  list-style-type: none;
+  text-align: left;
+  margin: 0 0 0 -2em;
 }
 
 
@@ -57,38 +75,60 @@ header {
 Body
 *********************/
 body {
-  margin-top: 4em;
+  margin-top: 5em;
+  background-color: #f8f8f8;
 }
 
 #body_container {
   width: 100%;
   min-height: 35em;
-  background-color: aquamarine;
 }
 
 #jumbotron {
-  width: 80%;
+  width: 90%;
   min-height: 12em;
-  background-color: cadetblue;
+  background-color: #595241;
   margin: 0 auto;
-  padding: 2em;
+  padding-top: 1em;
+  border-radius: 5px;
   overflow: hidden;
 }
 
+#jumbotron .item {
+  background-color: #B8AE9C;
+  border-radius: 5px;
+  color: #383838;
+}
+
 #about_box {
-  float: left;
-  background-color: darkolivegreen;
-  width: 65%;
+  margin: 0 auto;
+  width: 80%;
+  padding: .5em 1em;
 }
 
 #link_box {
-  float: right;
-  background-color: darkolivegreen;
-  width: 10em;
+  visibility: hidden;
+  width: 9em;
 }
 
+#link_box ul {
+  list-style-type: none;
+}
 
+#jumbotron a {
+  color: #444;
+  text-decoration: none;
+}
 
+#jumbotron a:visited {
+  color: #444;
+  text-decoration: none;
+}
+
+#jumbotron a:hover {
+  color: #444;
+  text-decoration: underline;
+}
 
 /*********************
 Footer
@@ -98,7 +138,8 @@ footer {
   left: 0;
   width: 100%;
   min-height: 2em;
-  background-color: chocolate;
+  border-top: 1px solid #444;
+  font-size: .65em;
 }
 
 
@@ -110,3 +151,49 @@ footer {
 /*********************
 Media Queries
 *********************/
+@media only screen and (min-width: 640px) {
+  /***********
+  Header
+  ************/
+  header {
+    position: fixed;
+  }
+
+  #logo {
+    float: left;
+    margin: .25em 0 0 1.5em;
+    text-align: left;
+  }
+
+  #nav {
+    float: right;
+    margin: 2.5em 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  /********************
+  Body
+  *********************/
+  #jumbotron {
+
+  }
+
+  #about_box {
+    width: 63%;
+    margin: 0 0 1em 1em;
+    float: left;
+  }
+
+  #link_box {
+    visibility: visible;
+    float: right;
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #about_box {
+    width: 70%;
+  }
+}
