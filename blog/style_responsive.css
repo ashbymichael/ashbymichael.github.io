@@ -6,11 +6,12 @@ html {
 }
 
 img {
-  float: left;
-  margin-right: .3em;
+  
 }
 
-
+.code {
+  font-family: "Courier New", monospaced;
+}
 
 
 /*********************
@@ -98,12 +99,14 @@ body {
   background-color: #B8AE9C;
   border-radius: 5px;
   color: #383838;
+  overflow: hidden;
 }
 
 #blog_box {
   margin: .5em auto;
   width: 80%;
   padding: .5em 1em;
+  overflow: hidden;
 }
 
 #link_box {
