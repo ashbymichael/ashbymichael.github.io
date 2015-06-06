@@ -1,0 +1,314 @@
+/**********************
+Base styles
+**********************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  transition: color, 0.3s;
+}
+
+
+
+
+/**********************
+Header
+**********************/
+header {
+  background: #383838;
+  color: white;
+  text-align: center;
+  display: block;
+  overflow: hidden;  /*replace with clearfix*/
+  font-family: Helvetica, sans-serif;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.4em;
+  /*letter-spacing: 1px;*/
+  /*text-align: left;*/
+}
+
+header h2 {
+  font-size: .75em;
+  font-weight: 300;
+  margin: 0;
+  /*text-align: left;*/
+  display: none;
+}
+
+header a:link {
+  color: white;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: orangered;
+  text-decoration: none;
+
+}
+
+header a:active {
+  color: orangered;
+  text-decoration: none;
+}
+
+#logo_name {
+  /*display: inline-block;*/
+  /*float: left;*/
+  margin-top: .5em;
+  margin-left: 1em;
+  height: 2.5em;
+}
+
+nav{
+  font-weight: 200;
+  margin: 0;
+}
+
+header ul {
+  list-style: none;
+  display: inline-block;
+  vertical-align: baseline;
+  /*background-color: green;*/
+  /*float: right;*/
+  /*position: absolute;*/
+  margin: 0;
+  /*margin-top: 1.75em;*/
+}
+
+header li {
+  display: inline-block;
+  vertical-align: baseline;
+  width: auto;
+  padding: 0 .5em;
+  margin: 0 1em;
+
+  /*border-bottom: 1px solid white;*/
+}
+
+header li.current {
+  border-bottom: .2em solid white;
+}
+
+header li.current:hover {
+  border-bottom: .2em solid orangered;
+}
+
+
+/**********************
+Body
+**********************/
+main {
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+main a:link {
+  color: white;
+  text-decoration: none;
+}
+
+main a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: orangered;
+  text-decoration: none;
+}
+
+main a:active {
+  color: orangered;
+  text-decoration: none;
+}
+
+main ul {
+  list-style: none;
+  margin: 1em auto;
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+#blog_box {
+  margin: 1em auto;
+  width: 90%%;
+  overflow: auto;
+  /*background-color: blue;*/
+  font-family: Helvetica, sans-serif;
+}
+
+#blog_box li {
+  height:14em;
+  width: 95%;
+  /*max-width: 27em;*/
+  padding: 0 .5em;
+  border-radius: 7px;
+  margin: 0 auto .5em auto;
+  display: inline-block;
+  text-align: left;
+}
+
+
+
+main a:active {
+  color: orangered;
+  text-decoration: none;
+}
+
+#blog_box h1{
+  font-weight: 200;
+}
+
+
+main li.left{
+  /*float: left;
+  margin: .5em .5em .5em 2em;*/
+}
+
+main li.right {
+  /*float: right;
+  margin: .5em 2em .5em .5em;*/
+}
+
+
+#link_box {
+  display: none;
+  /*list-style: none;
+  float: right;
+  border-radius: 7px;
+  width: 13%;
+  background-color: #333;
+  margin: 2em 1em 1em 0;*/
+}
+
+/*#link_box li {
+  text-align: left;
+  margin: .25em .3em;
+}*/
+
+
+
+/**********************
+Blog entries
+**********************/
+#w1-t {
+  background-color: cadetblue;
+  font-weight: 200;
+}
+
+#w1-c {
+  background-color: darkgoldenrod;
+}
+
+#w2-t {
+  background-color: indianred;
+}
+
+#w2-blank {
+  background-color: darkseagreen;
+}
+
+#w3-t {
+  background-color: lightslategray;
+}
+
+#w3-c {
+  background-color: cadetblue;
+}
+
+
+/**********************
+Media queries
+**********************/
+/*Two column layout*/
+@media only screen and (min-width: 600px) {
+  #logo_name {
+    float: left;
+    text-align: left;
+  }
+
+  #logo_name h2 {
+    display: inline-block;
+    position: relative;
+    bottom: .25em;
+  }
+
+  nav {
+    float: right;
+  }
+
+  header ul {
+    margin-top: 1.75em;
+  }
+
+  #blog_box li {
+    width: 49%;
+    height: 18em;
+  }
+
+  main li.left{
+    float: left;
+    margin: .5em .5em .5em 2em;
+  }
+
+  main li.right {
+    float: right;
+    margin: .5em 2em .5em .5em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+*/
