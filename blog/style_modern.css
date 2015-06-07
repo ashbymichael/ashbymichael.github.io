@@ -28,13 +28,13 @@ header {
   text-align: center;
   display: block;
   overflow: hidden;  /*replace with clearfix*/
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, Calibri, sans-serif
 }
 
 header h1 {
   margin: 0;
-  font-weight: 300;
-  font-size: 1.4em;
+  font-weight: 200;
+  font-size: 1.75em;
   /*letter-spacing: 1px;*/
   /*text-align: left;*/
 }
@@ -58,13 +58,13 @@ header a:visited {
 }
 
 header a:hover {
-  color: orangered;
+  color: #4298b5;
   text-decoration: none;
 
 }
 
 header a:active {
-  color: orangered;
+  color: #4298b5;
   text-decoration: none;
 }
 
@@ -107,12 +107,12 @@ header li.current {
 }
 
 header li.current:hover {
-  border-bottom: .2em solid orangered;
+  border-bottom: .2em solid #4298b5;
 }
 
 
 /**********************
-Body
+Blog Index Body
 **********************/
 main {
   font-family: Helvetica, sans-serif;
@@ -130,13 +130,15 @@ main a:visited {
 }
 
 main a:hover {
-  color: orangered;
+  color: #383838;
   text-decoration: none;
+  /*opacity: 1.0;*/
 }
 
 main a:active {
   color: orangered;
   text-decoration: none;
+  /*opacity: 1.0;*/
 }
 
 main ul {
@@ -149,7 +151,7 @@ main ul {
 
 #blog_box {
   margin: 1em auto;
-  width: 90%%;
+  width: 88%;
   overflow: auto;
   /*background-color: blue;*/
   font-family: Helvetica, sans-serif;
@@ -173,8 +175,20 @@ main a:active {
   text-decoration: none;
 }
 
-#blog_box h1{
+#blog_box h1 {
   font-weight: 200;
+  margin-bottom: 0;
+}
+
+#blog_box h2 {
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#blog_box h3 {
+  font-weight: 200;
+  margin-top: .5em;
 }
 
 
@@ -209,30 +223,66 @@ main li.right {
 /**********************
 Blog entries
 **********************/
-#w1-t {
-  background-color: cadetblue;
-  font-weight: 200;
+.item {
+  opacity: .85;
 }
 
+.item:hover {
+  opacity: 1.0;
+}
+
+#w1-t {
+  background-color: #dd5f32;
+  /*opacity: 0.8;*/
+}
+
+/*#w1-t:hover {
+  opacity: 1.0;
+}*/
+
+
+
+
 #w1-c {
-  background-color: darkgoldenrod;
+  background-color: #AA5F39;
 }
 
 #w2-t {
-  background-color: indianred;
+  background-color: #92b06a;
 }
 
 #w2-blank {
-  background-color: darkseagreen;
+  background-color: #b8ae9c;
 }
 
 #w3-t {
-  background-color: lightslategray;
+  background-color: #e19d29;
 }
 
 #w3-c {
-  background-color: cadetblue;
+  background-color: #4298b5;
 }
+
+
+/**********************
+About Index Body
+**********************/
+#jumbotron {
+  min-height: 10em;
+  width: 88%;
+  background-color: red;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+#about_box {
+  background-color: darkolivegreen;
+  width: 82%;
+}
+
+
+
+
 
 
 /**********************
@@ -243,12 +293,13 @@ Media queries
   #logo_name {
     float: left;
     text-align: left;
+    margin-left: 3em;
   }
 
   #logo_name h2 {
     display: inline-block;
     position: relative;
-    bottom: .25em;
+    bottom: .33em;
   }
 
   nav {
@@ -256,7 +307,8 @@ Media queries
   }
 
   header ul {
-    margin-top: 1.75em;
+    margin-top: 2.25em;
+    margin-right: 2em;
   }
 
   #blog_box li {
@@ -300,8 +352,33 @@ Media queries
 
 
 
+/* Main Primary color green*/
+/*.color-primary-0 { color: #267158 }
+.color-primary-1 { color: #71AA97 }
+.color-primary-2 { color: #478D76 }
+.color-primary-3 { color: #0E553E }
+.color-primary-4 { color: #003926 }*/
 
+/* Main Secondary color (1) blue*/
+/*.color-secondary-1-0 { color: #2B4C6F }
+.color-secondary-1-1 { color: #738CA6 }
+.color-secondary-1-2 { color: #4A6A8A }
+.color-secondary-1-3 { color: #133253 }
+.color-secondary-1-4 { color: #041D37 }*/
 
+/* Main Secondary color (2) yellow*/
+/*.color-secondary-2-0 { color: #AA7D39 }
+.color-secondary-2-1 { color: #FFDDAA }
+.color-secondary-2-2 { color: #D4AA6A }
+.color-secondary-2-3 { color: #805515 }
+.color-secondary-2-4 { color: #553300 }*/
+
+/* Main Complement color orange*/
+/*.color-complement-0 { color: #AA5F39 }
+.color-complement-1 { color: #FFC7AA }
+.color-complement-2 { color: #D48E6A }
+.color-complement-3 { color: #803915 }
+.color-complement-4 { color: #551D00 }*/
 
 
 
