@@ -3,35 +3,52 @@
 <head>
   <title>Michael Ashby | DBC</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style_responsive.css">
+  <link rel="stylesheet" href="style_modern.css">
 </head>
 
 <body>
+
+
+
 <header>
-  <div id="logo">
-    Michael Ashby
+  <div id="logo_name">
+    <a href="http://ashbymichael.github.io"><h1>Michael Ashby</h1>
+    <h2>Developer-in-Training</h2></a>
   </div>
-  <nav id="nav">
-    <ul class="nav">
-        <li><a href="../index.html">About</a></li>
-        <li><a href="index.html">Blog</a></li>
-        <li><a href="#">Portfolio</a></li>
+  <nav>
+    <ul id="nav_menu">
+      <a href="../index.html"><li>About</li></a>
+      <a href="index.html"><li class="current">Blog</li></a>
+      <a href="#"><li>Portfolio</li></a>
     </ul>
   </nav>
 </header>
 
-<div id="body_container">
-  <div id="jumbotron">
-    <div id="blog_box" class="item">
-      <ul>
-        <li><a href="t1-git-blog.html">Week 1: Git</a></li>
-        <li><a href="c1-chefs-kitchen.html">Week 1: DBC Culture</a></li>
-        <li><a href="t2-css-design.html">Week 2: CSS Positioning</a></li>
-      </ul>
-    </div>
+<main>
+  <!-- <aside id="link_box">
+    <ul>
+      <a href="#"><li>Github</li></a>
+      <a href="#"><li>Google+</li></a>
+      <a href="#"><li>Twitter</li></a>
+      <a href="#"><li>Linked in</li></a>
+      <a href="#"><li>email</li></a>
+    </ul>
+  </aside> -->
 
+  <div id="blog_box">
+    <ul>
+      <a href="t3-arrays-hashes.html"><li id="w3-t" class="left item"><h1>Week 3</h1><h2>Ruby: Arrays and Hashes</h2><h3>In programming, you frequently need a way to keep certain items grouped together when you store them away or pass them around.  In Ruby, you do this with hashes and arrays.</h3> </li></a>
+      <a href="c3-thinking-styles.html"><li id="w3-c" class="right item"><h1>Week 3</h1> <h2>Thinking Styles</h2><h3>Why I approach coding as practice, rather than study, and what it takes to learn a new skill.</h3></li></a>
+      <a href="#"><li id="w2-t" class="left item"><h1>Week 2</h1><h2>CSS Positioning</h2><h3>The CSS "position" attribute lets you control where and how the browser places an element, and it is key to laying out your pages in CSS.</h3> </li></a>
+      <a href="#"><li id="w2-blank" class="right item"><h1>...</h1></li></a>
+      <a href="t1-git-blog.html"><li id="w1-t" class="left item">
+        <h1>Week 1</h1> <h2>Git</h2><h3>This first blog entry is all about version control in general, and Git in particular.</h3>
+      </li></a>
+      <a href="c1-chefs-kitchen.html"><li id="w1-c" class="right item"><h1>Week 1</h1> <h2>DBC Culture</h2><h3>I write about my fears and expectations about the Dev Bootcamp experience.</h3></li></a>
+    </ul>
   </div>
-</div>
 
+
+</main>
 </body>
 </html>

@@ -153,7 +153,6 @@ main ul {
   margin: 1em auto;
   width: 88%;
   overflow: auto;
-  /*background-color: blue;*/
   font-family: Helvetica, sans-serif;
 }
 
@@ -203,15 +202,15 @@ main li.right {
 }
 
 
-#link_box {
-  display: none;
+/*#link_box {
+  display: none;*/
   /*list-style: none;
   float: right;
   border-radius: 7px;
   width: 13%;
   background-color: #333;
   margin: 2em 1em 1em 0;*/
-}
+/*}*/
 
 /*#link_box li {
   text-align: left;
@@ -263,25 +262,101 @@ Blog entries
   background-color: #4298b5;
 }
 
-
-/**********************
-About Index Body
-**********************/
-#jumbotron {
-  min-height: 10em;
+/*****************************************
+******************************************
+Blog entries
+******************************************
+*****************************************/
+main .blog-entry {
+  background-color: #B3D0EF;
   width: 88%;
-  background-color: red;
+  margin: 1em auto;
+  border-radius: 7px;
+  padding: 1em;
+}
+
+.blog-entry h1 {
+  font-weight: 200;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.blog-entry h4 {
+  font-weight: 200;
+  color: #333;
+  margin: 0;
+}
+
+
+
+
+/*****************************************
+******************************************
+About Body
+******************************************
+*****************************************/
+#jumbotron {
+  min-height: 35em;
+  width: 88%;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
+  /*border: 1px dashed blue;*/
 }
 
 #about_box {
-  background-color: darkolivegreen;
-  width: 82%;
+  background-color: #4298b5;
+  border-radius: 7px;
+  opacity: .9;
+  width: 84%;
+  float: left;
+  margin-top: 1.5em;
+  padding: 1em;
 }
 
+#about_box img {
+  float: left;
+  margin-right: .5em;
+  max-width: 25%;
+  min-width: 100px;
+  border-radius: 7px;
+  color: #383838;
+}
 
+#about_box h1 {
+  font-weight: 200;
+  color: #222;
+  margin-top: .0;
+  margin-bottom: 0;
+}
 
+#about_box p {
+  margin-top: .5em;
+  color: #111;
+}
+
+#link_box {
+  background-color: #383838;
+  border-radius: 7px;
+  width: 15%;
+  float: right;
+  margin-top: 1.5em;
+  padding-left: 1em;
+}
+
+#link_box ul {
+  text-align: left;
+}
+
+#link_box a:hover {
+  color: #4298b5;
+  text-decoration: none;
+
+}
+
+#link_box a:active {
+  color: #4298b5;
+  text-decoration: none;
+}
 
 
 
@@ -312,18 +387,18 @@ Media queries
   }
 
   #blog_box li {
-    width: 49%;
+    width: 49.3%;
     height: 18em;
   }
 
   main li.left{
     float: left;
-    margin: .5em .5em .5em 2em;
+    margin: .5em .5em .5em .5em;
   }
 
   main li.right {
     float: right;
-    margin: .5em 2em .5em .5em;
+    margin: .5em .5em .5em .5em;
   }
 
 }
@@ -380,7 +455,10 @@ Media queries
 .color-complement-3 { color: #803915 }
 .color-complement-4 { color: #551D00 }*/
 
-
+/*
+TODO
+Add block_quote class to spans, to allow for creating blocks of code in blog entries
+*/
 
 
 
