@@ -16,14 +16,7 @@ a {
   transition: color, 0.3s;
 }
 
-span.code {
-  font-family: "Courier New", monospace;
-}
 
-p.code_block {
-  font-family: "Courier New", monospace;
-  margin-left: 1em;
-}
 
 
 /**********************
@@ -227,7 +220,7 @@ main li.right {
 
 
 /**********************
-Blog entries
+Blog thumbnails
 **********************/
 .item {
   opacity: .85;
@@ -269,14 +262,6 @@ Blog entries
   background-color: #4298b5;
 }
 
-#w4-t {
-  background-color: #257059;
-}
-
-#w4-c {
-  background-color: #AA6039;
-}
-
 /*****************************************
 ******************************************
 Blog entries
@@ -312,7 +297,7 @@ About Body
 *****************************************/
 #jumbotron {
   min-height: 35em;
-  width: 88%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   /*border: 1px dashed blue;*/
@@ -320,18 +305,26 @@ About Body
 
 #about_box {
   background-color: #4298b5;
-  border-radius: 7px;
+  /*border-radius: 7px;*/
   opacity: .9;
-  width: 84%;
-  float: left;
+  width: 100%;
+  /*float: left;*/
   margin-top: 1.5em;
-  padding: 1em;
+  padding: 1.75em 4%;
+  overflow: auto;
+}
+
+#test {
+  width: 100%;
+  min-height: 15em;
+  background-color: #D4AA6A;
+  margin-top: 2em;
 }
 
 #about_box img {
   float: left;
   margin-right: .5em;
-  max-width: 25%;
+  max-width: 20%;
   min-width: 100px;
   border-radius: 7px;
   color: #383838;
@@ -353,13 +346,16 @@ About Body
   background-color: #383838;
   border-radius: 7px;
   width: 15%;
+  min-height: 9em;
   float: right;
   margin-top: 1.5em;
+  margin-left: 1.5em;
   padding-left: 1em;
 }
 
 #link_box ul {
   text-align: left;
+  margin: 1.6em auto;
 }
 
 #link_box a:hover {
