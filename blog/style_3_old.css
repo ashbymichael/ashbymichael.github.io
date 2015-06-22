@@ -10,7 +10,6 @@ Base styles
 body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Calibri, sans-serif;
 }
 
 a {
@@ -25,34 +24,32 @@ html {
   background-size: cover;
 }
 
-footer {
-  font-size: .65em;
-}
 
-
-/*******************************************
-********************************************
+/**********************
 Header
-********************************************
-*******************************************/
+**********************/
 header {
   background: #383838;
   color: white;
   text-align: center;
   display: block;
   overflow: hidden;  /*replace with clearfix*/
+  font-family: Helvetica, Calibri, sans-serif
 }
 
 header h1 {
   margin: 0;
   font-weight: 200;
   font-size: 1.75em;
+  /*letter-spacing: 1px;*/
+  /*text-align: left;*/
 }
 
 header h2 {
   font-size: .75em;
   font-weight: 300;
   margin: 0;
+  /*text-align: left;*/
   display: none;
 }
 
@@ -78,8 +75,10 @@ header a:active {
 }
 
 #logo_name {
+  /*display: inline-block;*/
+  /*float: left;*/
   margin-top: .5em;
-  /*margin-left: 1em;*/
+  margin-left: 1em;
   height: 2.5em;
 }
 
@@ -88,124 +87,39 @@ nav{
   margin: 0;
 }
 
-nav ul {
+header ul {
   list-style: none;
   display: inline-block;
   vertical-align: baseline;
+  /*background-color: green;*/
+  /*float: right;*/
+  /*position: absolute;*/
   margin: 0;
+  /*margin-top: 1.75em;*/
 }
 
-nav li {
+header li {
   display: inline-block;
   vertical-align: baseline;
   width: auto;
   padding: 0 .5em;
   margin: 0 1em;
+
+  /*border-bottom: 1px solid white;*/
 }
 
-nav li.current {
+header li.current {
   border-bottom: .2em solid white;
 }
 
-nav li.current:hover {
+header li.current:hover {
   border-bottom: .2em solid #4298b5;
 }
 
 
-
-
-/*****************************************
-******************************************
-About Page
-******************************************
-*****************************************/
-#about_main {
-  min-height: 35em;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-#about_box {
-  background-color: rgba(66,152,181,0.75);
-  width: 100%;
-  margin-top: 12%;
-  padding: 0;
-  overflow: auto;
-}
-
-#test {
-  width: 100%;
-  min-height: 15em;
-  background-color: #D4AA6A;
-  margin-top: 2em;
-}
-
-#about_box img {
-  float: left;
-  margin-right: .5em;
-  max-width: 20%;
-  min-width: 100px;
-  border-radius: 7px;
-  color: #383838;
-}
-
-#about_box h1 {
-  font-weight: 200;
-  color: #222;
-  margin-left: 3%;
-  margin-bottom: .25em;
-
-}
-
-#about_box p {
-  margin: 0 1em 1em 3%;
-  font-weight: 300;
-  color: #111;
-}
-
-#link_box {
-  background-color: #383838;
-  border-radius: 7px;
-  width: 15%;
-  width: 7em;
-  float: right;
-  margin: 3%;
-  padding-left: 1em;
-  opacity: 1;
-  display: none;
-  text-align: center;
-
-}
-
-#link_box ul {
-  text-align: left;
-  margin: 1em auto;
-  display: inline-block;
-  position: relative;
-  right: 1em;
-}
-
-#link_box a:hover {
-  color: #4298b5;
-  text-decoration: none;
-
-}
-
-#link_box a:active {
-  color: #4298b5;
-  text-decoration: none;
-}
-
-#about_footer {
-  margin: 1.75em;
-}
-
-/********************************************
-*********************************************
+/**********************
 Blog Index Body
-*********************************************
-********************************************/
+**********************/
 main {
   font-family: Helvetica, sans-serif;
   font-weight: 200;
@@ -224,11 +138,13 @@ main a:visited {
 main a:hover {
   color: #383838;
   text-decoration: none;
+  /*opacity: 1.0;*/
 }
 
 main a:active {
   color: orangered;
   text-decoration: none;
+  /*opacity: 1.0;*/
 }
 
 main ul {
@@ -249,6 +165,7 @@ main ul {
 #blog_box li {
   height:14em;
   width: 95%;
+  /*max-width: 27em;*/
   padding: 0 .5em;
   border-radius: 7px;
   margin: 0 auto .5em auto;
@@ -256,9 +173,6 @@ main ul {
   text-align: left;
 }
 
-#blog_footer {
-
-}
 
 
 main a:active {
@@ -283,6 +197,31 @@ main a:active {
 }
 
 
+main li.left{
+  /*float: left;
+  margin: .5em .5em .5em 2em;*/
+}
+
+main li.right {
+  /*float: right;
+  margin: .5em 2em .5em .5em;*/
+}
+
+
+/*#link_box {
+  display: none;*/
+  /*list-style: none;
+  float: right;
+  border-radius: 7px;
+  width: 13%;
+  background-color: #333;
+  margin: 2em 1em 1em 0;*/
+/*}*/
+
+/*#link_box li {
+  text-align: left;
+  margin: .25em .3em;
+}*/
 
 
 
@@ -299,7 +238,15 @@ Blog thumbnails
 
 #w1-t {
   background-color: #dd5f32;
+  /*opacity: 0.8;*/
 }
+
+/*#w1-t:hover {
+  opacity: 1.0;
+}*/
+
+
+
 
 #w1-c {
   background-color: #AA5F39;
@@ -319,22 +266,6 @@ Blog thumbnails
 
 #w3-c {
   background-color: #4298b5;
-}
-
-#w4-t {
-  background-color: #257059;
-}
-
-#w4-c {
-  background-color: #AA6039;
-}
-
-#w5-t {
-  background-color: #AA5F39;
-}
-
-#w5-c {
-  background-color: #dd5f32;
 }
 
 /*****************************************
@@ -365,24 +296,97 @@ main .blog-entry {
 
 
 
+/*****************************************
+******************************************
+About Body
+******************************************
+*****************************************/
+#jumbotron {
+  min-height: 35em;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /*border: 1px dashed blue;*/
+}
+
+#about_box {
+  background-color: rgba(66,152,181,0.75);
+  /*border-radius: 7px;*/
+  /*opacity: .75;*/
+  width: 100%;
+  /*float: left;*/
+  margin-top: 1.5em;
+  padding: 1.75em 4%;
+  overflow: auto;
+}
+
+#test {
+  width: 100%;
+  min-height: 15em;
+  background-color: #D4AA6A;
+  margin-top: 2em;
+}
+
+#about_box img {
+  float: left;
+  margin-right: .5em;
+  max-width: 20%;
+  min-width: 100px;
+  border-radius: 7px;
+  color: #383838;
+}
+
+#about_box h1 {
+  font-weight: 200;
+  color: #222;
+  margin-top: .0;
+  margin-bottom: 0;
+}
+
+#about_box p {
+  margin-top: .5em;
+  color: #111;
+}
+
+#link_box {
+  background-color: #383838;
+  border-radius: 7px;
+  width: 15%;
+  min-height: 9em;
+  float: right;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  padding-left: 1em;
+  opacity: 1;
+}
+
+#link_box ul {
+  text-align: left;
+  margin: 1.6em auto;
+}
+
+#link_box a:hover {
+  color: #4298b5;
+  text-decoration: none;
+
+}
+
+#link_box a:active {
+  color: #4298b5;
+  text-decoration: none;
+}
 
 
 
-
-/********************************************
-*********************************************
+/**********************
 Media queries
-*********************************************
-********************************************/
+**********************/
+/*Two column layout*/
 @media only screen and (min-width: 600px) {
-
-  /*****************
-  Header
-  *****************/
   #logo_name {
     float: left;
     text-align: left;
-    margin-left: 1.75em;
+    margin-left: 3em;
   }
 
   #logo_name h2 {
@@ -397,12 +401,9 @@ Media queries
 
   header ul {
     margin-top: 2.25em;
-    margin-right: 1em;
+    margin-right: 2em;
   }
 
-  /*****************
-  Blog
-  *****************/
   #blog_box li {
     width: 49.3%;
     height: 18em;
@@ -417,15 +418,6 @@ Media queries
     float: right;
     margin: .5em .5em .5em .5em;
   }
-
-  /*****************
-  About
-  *****************/
-  #link_box {
-    display: inline-block;
-  }
-
-
 
 }
 
