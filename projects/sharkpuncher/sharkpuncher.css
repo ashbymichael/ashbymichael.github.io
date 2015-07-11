@@ -56,7 +56,8 @@ main {
   background: dimgrey;
   border-radius: 7px;
   font-size: 1.15em;
-  color: chartreuse;
+  color: hsl(113, 100%, 67%);
+  text-shadow: 1px 1px hsl(113, 25%, 25%);
   width: 75%;
   margin: 1.5em auto;
   padding-top: 1em;
@@ -153,7 +154,7 @@ main {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: hsl(156,70%,49%);
+  background: hsl(113,50%,49%);
   /*border: 2px solid #0b0b0b;*/
   display: -webkit-flex;
 	display: flex;
@@ -164,7 +165,7 @@ main {
   align-items: center;
   -webkit-align-items: center;
   box-shadow: 0 0 4px #000;
-  color: hsl(156,79%,15%)
+  color: hsl(113,79%,15%)
 }
 .button_outer {
   width:6.5em;
@@ -186,7 +187,7 @@ main {
 }
 
 .button.inactive {
-  background: hsl(156,40%,49%);
+  background: hsl(113,40%,49%);
   color: hsl(156,29%,68%);
   opacity: .8;
   pointer-events: none;
