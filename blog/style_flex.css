@@ -34,13 +34,17 @@ Header
 *******************************************/
 
 header {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: baseline;
+  align-content: baseline;
   background: #383838;
   color: #f9f9f9;
   text-align: center;
-
 }
 
 
@@ -93,8 +97,9 @@ nav{
 
 nav ul {
   list-style: none;
-  display: inline-block;
+  /*display: inline-block;*/
   /*vertical-align: baseline;*/
+
   margin: 0;
 }
 
