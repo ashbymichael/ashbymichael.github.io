@@ -7,11 +7,20 @@ header {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   background-color: grey;
+  background-image: url("paper_seamless.jpg");
+}
+
+main {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 h1 {
-  margin: 0 auto;
+  margin: 1em auto;
   padding: 0;
 }
 
