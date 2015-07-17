@@ -1,0 +1,29 @@
+header {
+  width: 75%;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+body {
+  background-color: grey;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 0;
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+.cheatcard {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background-color: white;
+  width: 75%;
+  padding: 1em;
+}
