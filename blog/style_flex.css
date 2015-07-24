@@ -18,7 +18,7 @@ a {
 }
 
 html {
-  background-image: url(../imgs/damask.png);
+  background-image: url(../imgs/damask.png), url(../imgs/paper.jpg);
   background-color: #f9f9f9;
 }
 
@@ -45,12 +45,12 @@ header {
   background: #383838;
   color: #f9f9f9;
   text-align: center;
-  box-shadow: 0px .25em .5em #555;
+  box-shadow: .1em .25em .5em #666;
 }
 
 
 header h1 {
-  margin: 0;
+  margin: .25em 0 0 0;
   font-weight: 400;
   font-size: 1.75em;
 }
@@ -98,16 +98,12 @@ nav{
 
 nav ul {
   list-style: none;
-  /*display: inline-block;*/
-  /*vertical-align: baseline;*/
-
   margin: 0;
 }
 
 nav li {
   display: inline-block;
-  /*vertical-align: baseline;*/
-  /*width: auto;*/
+  font-size: .9em;
   padding: 0 .5em;
   margin: 0 1em;
 }
@@ -145,6 +141,7 @@ main {
   margin: 0 auto;
   overflow: hidden;
   display: -webkit-flex;
+  display: flex;
   -webkit-justify-content: center;
   justify-content: center;
 
@@ -156,7 +153,7 @@ main {
   margin: 4em 0;
   padding: 0;
   border-radius: 7px;
-  box-shadow: 0px .25em .5em #888;
+  box-shadow: 1px .25em .5em #888;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -183,19 +180,20 @@ main {
   height: 10em;
   margin: .5em 1em;
   display: none;
-  box-shadow: 0px .1em .2em #555;
+  box-shadow: 1px .2em .2em #245;
 }
 
 #link_box ul {
   /*text-align: left;*/
   margin: 1em auto;
   /*display: inline-block;*/
-  /*position: relative;
-  right: 1em;*/
+  position: relative;
+  right: 1em;
+  list-style: none;
 }
 
 #link_box li {
-  text-align: left;
+  /*text-align: left;*/
 }
 
 #link_box a:hover {
@@ -218,10 +216,29 @@ main {
 Blog Index Body
 *********************************************
 ********************************************/
-/*main {
+
+#blog_box {
+  margin: 1em auto;
+  width: 88%;
+  overflow: auto;
   font-family: Helvetica, sans-serif;
-  font-weight: 200;
-}*/
+  display:-webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#blog_box .item {
+  height:14em;
+  width: 95%;
+  padding: .25em 1em;
+  border-radius: 7px;
+  margin: 0 auto .5em auto;
+  display: block;
+  text-align: left;
+  box-shadow: 1px .25em .5em #888;
+  text-shadow: 1px 1px 2px #383838;
+}
 
 main a:link {
   color: white;
@@ -236,6 +253,7 @@ main a:visited {
 main a:hover {
   color: #383838;
   text-decoration: none;
+  text-shadow: none;
 }
 
 main a:active {
@@ -243,40 +261,17 @@ main a:active {
   text-decoration: none;
 }
 
-main ul {
+#blog_box ul {
   list-style: none;
-  margin: 1em auto;
+  margin: 1em;
   padding: 0;
   border: 0;
-  text-align: center;
-}
-
-#blog_box {
-  margin: 1em auto;
-  width: 88%;
-  overflow: auto;
-  font-family: Helvetica, sans-serif;
+  /*text-align: center;*/
 }
 
 #blog_box li {
-  height:14em;
-  width: 95%;
-  padding: 0 .5em;
-  border-radius: 7px;
-  margin: 0 auto .5em auto;
   display: inline-block;
-  text-align: left;
 }
-
-#blog_footer {
-
-}
-
-
-/*main a:active {
-  color: orangered;
-  text-decoration: none;
-}*/
 
 #blog_box h1 {
   font-weight: 200;
@@ -295,9 +290,6 @@ main ul {
 }
 
 
-
-
-
 /**********************
 Blog thumbnails
 **********************/
@@ -307,6 +299,7 @@ Blog thumbnails
 
 .item:hover {
   opacity: 1.0;
+  /*text-shadow: none;*/
 }
 
 #w1-t {
@@ -404,7 +397,7 @@ Media queries
   #logo_name h2 {
     display: inline-block;
     position: relative;
-    bottom: .33em;
+    bottom: .75em;
   }
 
   nav {
@@ -425,20 +418,29 @@ Media queries
   /*****************
   Blog
   *****************/
-  #blog_box li {
-    width: 49.3%;
-    height: 18em;
+  #blog_box {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
   }
 
-  main li.left{
-    float: left;
-    margin: .5em .5em .5em .5em;
+  #blog_box .item {
+    width: 13em;
+    height: 14em;
   }
 
-  main li.right {
-    float: right;
-    margin: .5em .5em .5em .5em;
+  #blog_box h1 {
+    font-size: 1.5em
   }
+
+  #blog_box h2 {
+    font-size: 1.25em
+  }
+
+  #blog_box h3 {
+    font-size: 1em
+  }
+
+
 
   /*****************
   About
@@ -446,8 +448,9 @@ Media queries
   #about_box {
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    /*-webkit-flex-direction: row;
+    flex-direction: row;*/
+    /*max-width: 44em;*/
   }
 
   #about_box .p {
@@ -463,6 +466,18 @@ Media queries
 
 
 
+}
+@media only screen and (min-width: 700px) {
+  #about_box {
+    padding: 0 3%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #about_box {
+    max-width: 52em;
+    padding: 0 3%;
+  }
 }
 
 
