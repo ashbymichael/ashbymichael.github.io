@@ -1,12 +1,6 @@
 /**********************
 Base styles
 **********************/
-/** {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}*/
-
 body {
   margin: 0;
   padding: 0;
@@ -116,20 +110,6 @@ nav li.current:hover {
   border-bottom: .2em solid #4298b5;
 }
 
-
-/*****************************************
-******************************************
-Main
-******************************************
-*****************************************/
-/*main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}*/
-
-
-
 /*****************************************
 ******************************************
 About Page
@@ -192,14 +172,9 @@ main {
   list-style: none;
 }
 
-#link_box li {
-  /*text-align: left;*/
-}
-
 #link_box a:hover {
   color: #4298b5;
   text-decoration: none;
-
 }
 
 #link_box a:active {
@@ -216,7 +191,6 @@ main {
 Blog Index Body
 *********************************************
 ********************************************/
-
 #blog_box {
   margin: 1em auto;
   width: 88%;
@@ -266,7 +240,6 @@ main a:active {
   margin: 1em;
   padding: 0;
   border: 0;
-  /*text-align: center;*/
 }
 
 #blog_box li {
@@ -389,7 +362,6 @@ Media queries
 
 
   #logo_name {
-    /*float: left;*/
     text-align: left;
     margin: 0 1.5em;
   }
@@ -401,13 +373,11 @@ Media queries
   }
 
   nav {
-    /*float: right;*/
     display: static;
   }
 
   header ul {
     margin-top: 2.25em;
-    /*margin-right: 1em;*/
   }
 
   header li {
@@ -448,9 +418,6 @@ Media queries
   #about_box {
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    /*-webkit-flex-direction: row;
-    flex-direction: row;*/
-    /*max-width: 44em;*/
   }
 
   #about_box .p {
