@@ -1,1 +1,0 @@
-# ashbymichael.github.io
