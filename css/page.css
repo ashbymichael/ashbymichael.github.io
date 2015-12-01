@@ -11,10 +11,17 @@ body {
   width: 100%;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+
 .centered {
   text-align: center;
 }
-
 
 .card {
   background: #fff;
@@ -48,14 +55,9 @@ body {
     /*text-transform: uppercase;*/
 }
   .splash a {
-    text-decoration: none;
-    color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
   }
-    .splash a:hover {
-      text-decoration: underline;
-    }
 
 .splash-head {
     font-size: 20px;
@@ -72,8 +74,4 @@ body {
     color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
-}
-
-.ribbon a{
-  
 }
