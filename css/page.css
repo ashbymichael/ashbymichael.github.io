@@ -1,3 +1,7 @@
+.debug {
+  border: 1.5px solid red;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -74,4 +78,10 @@ a {
     color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
+}
+
+.vert-center {
+  display: flex;
+  /*height: 100%;*/
+  align-items: center;
 }
