@@ -9,9 +9,9 @@ html {
 body {
   background: #5d879d;
   /*background-image: url("../img/cardboard-flat.png");*/
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
   width: 100%;
   font-family: 'Roboto', sans-serif;
 }
@@ -85,4 +85,25 @@ a {
   display: flex;
   /*height: 100%;*/
   align-items: center;
+}
+
+.ribbon,
+.white-ribbon {
+  display: flex;
+  align-items: center;
+  /*padding: 1em;*/
+}
+
+.image-box {
+  display: flex;
+  width: 40rem;
+  justify-content: center;
+}
+
+.image {
+  max-width: 18rem;
+}
+
+.description-box {
+  padding: 0 1em;
 }

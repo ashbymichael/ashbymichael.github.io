@@ -2,8 +2,7 @@
 <html>
 <head>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link href="css/page.css" rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
@@ -19,30 +18,32 @@
     <div class="splash">
       <h1 class="splash-head animated15 fadeInDown">Michael Ashby</h1>
       <p class="splash-subhead animated15 fadeInUp">
-        <a href="https://github.com/ashbymichael">Github</a> | <a
+        <a href="#projects">Projects | <a
+        href="https://github.com/ashbymichael">Github</a> | <a
         href="https://linkedin.com/in/ashbymichael">LinkedIn</a>
       </p>
     </div>
   </div>
 
   <div class="content-wrapper">
+    <a name="projects"></a>
     <div class="content">
       <div class="pure-u-1 centered">
         <i class="fa fa-angle-double-down fa-5x animated1 pulse"></i>
       </div>
     </div>
 
-    <div class="ribbon l-box-lrg pure-g">
-      <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+    <div class="ribbon">
+      <div class="image-box">
         <a href="https://github.com/ashbymichael/ki-lib">
           <img class="pure-img-responsive" src="img/kicliba.png" width="225">
         </a>
       </div>
-      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+      <div class="description-box">
         <h2 class="content-head content-head-ribbon">
           Kaplan International Berkeley Library System
         </h2>
-        <p>
+        <p class="centered">
           Library Management System built for the Berkeley branch of Kaplan International Colleges.
           <ul>
           <li>Increased library budget by ~15% by eliminating loss through designing library circulation management tool with Ruby on Rails for language school to organize their physical library used by 200+ students and 10 staff.</li>
@@ -51,9 +52,9 @@
           <li>Collected and incorporated feedback from 30% of userbase to refactor features to improve UX and workflow.</li>
           <li>Achieved 100% coverage of codebase by following TDD and writing robust test suite with RSpec and Capybara.</li>
           </ul>
-
         </p>
-        <p class="is-center">
+
+        <p class="centered">
           <a href="https://github.com/ashbymichael/ki-lib">Github</a> | <a
             href="http://kiclibdemo.herokuapp.com">Heroku</a>
         </p>
@@ -61,8 +62,8 @@
     </div>
 
     <div class="content">
-      <div class="pure-g">
-        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+      <div class="white-ribbon">
+        <div class="description-box">
           <h2 class="is-center">Resume Builder</h2>
           <p>
             Resume Builder is a demonstration of Rails' nested model forms.  Originally built as one component of a larger e-commerce app, it can build a resume object with an arbitrary number of associated jobs, education experiences, skills, etc..., and dynamically generate forms to accommodate them.
@@ -78,21 +79,21 @@
               href="http://resume-builder-2016.herokuapp.com">Heroku</a>
           </p>
         </div>
-        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-2-5 is-center">
+        <div class="image-box">
           <a href="https://github.com/ashbymichael/resume_builder">
-            <img src="img/resume_builder.png" width="400">
+            <img src="img/resume_builder.png" class="image">
           </a>
         </div>
       </div>
     </div>
 
-    <div class="ribbon l-box-lrg pure-g">
-      <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+    <div class="ribbon">
+      <div class="image-box">
         <a href="https://github.com/ashbymichael/codexproject">
-          <img class="pure-img-responsive" src="img/codex.png" width="350">
+          <img class="image" src="img/codex.png">
         </a>
       </div>
-      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+      <div class="description-box">
         <h2 class="content-head content-head-ribbon">Codex</h2>
         <p>
           CODEX is an automated studying tool that encourages users to read more code through lesson plan creation and frequent reminders.
@@ -110,8 +111,8 @@
     </div>
 
     <div class="content">
-      <div class="pure-g">
-        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+      <div class="white-ribbon">
+        <div class="l-box">
           <h2 class="is-center">StudyCard</h2>
           <p>
             StudyCard is a flashcard-based memorization tool based on the <a href="https://www.supermemo.com/english/ol/sm2.htm"> SuperMemo SM-2 algorithm</a>. Cards will be served up for review to maximize learning efficiency and simplify the organization and review of large flashcard collections.  It was built using Rails in the back and JQuery in the front.
@@ -123,7 +124,7 @@
         </div>
         <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-2-5 is-center">
           <a href="https://github.com/ashbymichael/studycard3">
-            <img src="img/studycarda.png" width="400">
+            <img src="img/studycarda.png" class="image">
           </a>
         </div>
       </div>
