@@ -107,3 +107,14 @@ a {
 .description-box {
   padding: 0 1em;
 }
+
+.about {
+  width: 100%;
+  min-height: 12rem;
+  background: #333;
+  margin: 0;
+}
+
+.profile-photo {
+  border-radius: 5%;
+}
