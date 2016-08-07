@@ -8,10 +8,6 @@ html {
 
 body {
   background: #5d879d;
-  /*background-image: url("../img/cardboard-flat.png");*/
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;*/
   width: 100%;
   font-family: 'Roboto', sans-serif;
 }
@@ -40,7 +36,6 @@ a {
 
 
 .splash-container {
-    /*background: #1f8dd6;*/
     z-index: 1;
     overflow: hidden;
     width: 100%;
@@ -57,7 +52,6 @@ a {
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
-    /*text-transform: uppercase;*/
 }
   .splash a {
     letter-spacing: 0.05em;
@@ -83,15 +77,20 @@ a {
 
 .vert-center {
   display: flex;
-  /*height: 100%;*/
   align-items: center;
+}
+
+.ribbon {
+  background: #333;
+  color: #aaa;
 }
 
 .ribbon,
 .white-ribbon {
   display: flex;
   align-items: center;
-  /*padding: 1em;*/
+  padding: 3rem .5rem;
+  text-align: justify;
 }
 
 .image-box {
@@ -102,6 +101,7 @@ a {
 
 .image {
   max-width: 18rem;
+  overflow: hidden;
 }
 
 .description-box {
