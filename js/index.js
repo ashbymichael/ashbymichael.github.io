@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  console.log('hello world');
-
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
