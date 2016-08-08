@@ -14,7 +14,7 @@ body {
     font-size: 13px;
 }
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -22,7 +22,7 @@ h5,
 h6,
 label {
     color: #34495e;
-}
+}*/
 
 .pure-img-responsive {
     max-width: 100%;
@@ -190,7 +190,7 @@ a.pure-button-primary {
     font-weight: 400;
     /*text-transform: uppercase;*/
     letter-spacing: 0.1em;
-    margin: 2em 0 1em;
+    /*margin: 2em 0 1em;*/
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
