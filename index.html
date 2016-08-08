@@ -77,9 +77,14 @@
       <div class="white-ribbon">
         <div class="l-box">
           <h2 class="is-center">StudyCard</h2>
-          <p>
-            StudyCard is a flashcard-based memorization tool based on the <a href="https://www.supermemo.com/english/ol/sm2.htm" target="_blank"> SuperMemo SM-2 algorithm</a>. Cards will be served up for review to maximize learning efficiency and simplify the organization and review of large flashcard collections.  It was built using Rails in the back and JQuery in the front.
+          <p class="centered ribbon-p">
+            Flashcard-based Spaced Repetition System study tool for memorization
           </p>
+            <ul>
+              <li>Maximized average user retention rates after studying cards to ~92% and reduced time spent building and organizing decks to 0 by implementing <a href="https://www.supermemo.com/english/ol/sm2.htm" target="_blank">SuperMemo2 algorithm</a> in Ruby.</li>
+              <li>Built responsive interface using jQuery, CSS and ERB</li>
+              <li>Designed and implemented PostgreSQL database to organize cards and decks.</li>
+            </ul>
           <p class="is-center">
             <a href="https://github.com/ashbymichael/studycard3" target="_blank">Github</a> | <a
               href="http://studycard2016.herokuapp.com">Heroku</a>
@@ -103,12 +108,13 @@
         <h2 class="content-head content-head-ribbon">
           Benkyo
         </h2>
-        <p class="centered">
-          Angular2 application that consumes StudyCard's API.
-          <ul>
-          <li>Reduced HTTP requests to Rails backend by ~75% through utilizing Angular 2.0 to handle page routing.</li>
-          </ul>
+        <p class="centered ribbon-p">
+          Update to StudyCard based on Angular2.
         </p>
+          <ul>
+            <li>Converted existing Rails backend into a RESTful JSON API to accomodate decoupled front-end applications.</li>
+            <li>Reduced HTTP requests to Rails backend by ~75% through utilizing Angular 2.0 to handle page routing.</li>
+          </ul>
 
         <p class="centered">
           <a href="https://github.com/ashbymichael/benkyo3" target="_blank">Github</a>
@@ -121,8 +127,9 @@
       <div class="white-ribbon">
         <div class="description-box">
           <h2 class="is-center">Privately Owned Public Open Spaces</h2>
-          <p>
+          <p class="centered ribbon-p">
             Visual map for urban park lovers to discover nearby Privately-Owned Public Open Spaces (POPOS) in San Francisco.
+          </p>
             <ul>
               <li>Wrote CSV parser using Ruby to organize raw location data of 74+ POPOS from SF OpenData into hashmaps.</li>
               <li>Designed UI/UX using Material Design Lite CSS to complement existing GoogleMaps API style themes.</li>
@@ -130,7 +137,6 @@
               <li>Resolved geolocation issues by developing algorithms in Ruby for locating and sorting nearby GPS data.</li>
             </ul>
 
-          </p>
           <p class="is-center">
             <a href="https://github.com/ashbymichael/resume_builder" target="_blank">Github</a> | <a
               href="http://resume-builder-2016.herokuapp.com">Heroku</a>
@@ -152,14 +158,14 @@
       </div>
       <div class="description-box">
         <h2 class="content-head content-head-ribbon">Codex</h2>
-        <p>
+        <p class="centered ribbon-p">
           CODEX is an automated studying tool that encourages users to read more code through lesson plan creation and frequent reminders.
+        </p>
           <ul>
             <li>Selected Github repositories for study based on user search terms and repo criteria such as popularity, number of contributors and frequency of activity.</li>
             <li>Delivered study plans via SMS message or email utilizing the Twilio and SendGrid APIs.</li>
             <li>Utilized Google Fonts, Materialize CSS, Bootstrap and jQuery to create dynamic, responsive front-end UI/UX.</li>
           </ul>
-        </p>
         <p class="is-center">
           <a href="https://github.com/ashbymichael/codexproject" target="_blank">Github</a> | <a
             href="http://teamcodex.herokuapp.com/">Heroku</a>
@@ -173,15 +179,15 @@
       <div class="white-ribbon">
         <div class="description-box">
           <h2 class="is-center">Resume Builder</h2>
-          <p>
+          <p class="centered ribbon-p">
             Resume Builder is a demonstration of Rails' nested model forms.  Originally built as one component of a larger e-commerce app, it can build a resume object with an arbitrary number of associated jobs, education experiences, skills, etc..., and dynamically generate forms to accommodate them.
+          </p>
             <ul>
               <li>Created dynamically generated nested forms in Ruby on Rails with ActiveRecord and ActionView to allow for continual addition of associated jobs, schools, skills, and references to resumes.</li>
               <li>Developed tool for users to choose from 12+ templates using Ruby on Rails with PDF exporting using PrawnPDF.</li>
               <li>Facilitated scrum agile development and scoped the project on a team of 2 engineers into weekly sprints.</li>
             </ul>
 
-          </p>
           <p class="is-center">
             <a href="https://github.com/ashbymichael/resume_builder" target="_blank">Github</a> | <a
             href="http://resume-builder-2016.herokuapp.com">Heroku</a>
